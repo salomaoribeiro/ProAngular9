@@ -1,16 +1,3 @@
-//import { enableProdMode } from '@angular/core';
-//import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
-//import { AppModule } from './app/app.module';
-//import { environment } from './environments/environment';
-
-//if (environment.production) {
-//  enableProdMode();
-//}
-
-//platformBrowserDynamic().bootstrapModule(AppModule)
-//  .catch(err => console.error(err));
-
 console.log("Hello");
 console.log("Apples");
 console.log("This is a statement");
@@ -49,3 +36,13 @@ let messageFunc = function (name, weather) {
 };
 
 messageFunc("Adam", "raining");
+
+let firstString = "This is a string";
+let secondString = "And so is this";
+
+let messageFunction = function (weather) {
+  let message = `It is ${weather} today.`;
+  console.log(message);
+};
+
+messageFunction("raining");
