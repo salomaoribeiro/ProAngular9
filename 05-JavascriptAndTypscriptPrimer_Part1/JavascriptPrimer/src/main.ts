@@ -93,3 +93,14 @@ let myArray2 = [100, "Adam", true];
 console.log("Index 0: " + myArray2[0]);
 myArray2[0] = "Outro valor";
 console.log("Index 0: " + myArray2[0]);
+
+for (let index = 0; index < myArray2.length; index++) {
+  const element = myArray2[index];
+  console.log("Index: " + index + ": " + myArray2[index]);
+}
+
+console.log("---");
+
+myArray2.forEach((value, index) =>
+  console.log("Index: " + index + ": " + myArray2[index])
+);
