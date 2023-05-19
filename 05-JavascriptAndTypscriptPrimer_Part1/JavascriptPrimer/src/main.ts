@@ -82,3 +82,14 @@ if (firstVal === secondVal) {
 } else {
   console.log("They are NOT the same.");
 }
+
+let myArray = new Array();
+myArray[0] = 100;
+myArray[1] = "Adam";
+myArray[2] = true;
+
+let myArray2 = [100, "Adam", true];
+
+console.log("Index 0: " + myArray2[0]);
+myArray2[0] = "Outro valor";
+console.log("Index 0: " + myArray2[0]);
