@@ -11,3 +11,4 @@ console.log(weather.message);
 console.log(otherName.message);
 
 console.log(TempConverter.convertFtoC(38));
+console.log(TempConverter.convertFtoC("100"));
