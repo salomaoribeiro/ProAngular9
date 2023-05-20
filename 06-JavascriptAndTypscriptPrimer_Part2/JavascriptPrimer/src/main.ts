@@ -16,3 +16,11 @@ myData.name = "Adam";
 myData.weather = "sunny";
 console.log("Hello " + myData.name + ".");
 console.log("Today is " + myData.weather + ".");
+
+let myObject = {
+  name: "Adam",
+  weather: "sunny",
+};
+
+console.log("Hello " + myObject.name + ".");
+console.log("Today is " + myObject.weather + ".");
