@@ -1,21 +1,15 @@
 export class Name {
-  constructor(first, second) {
-    this.first = first;
-    this.second = second;
-  }
+  constructor(private first: string, private second: string) {}
 
-  get message() {
+  get message(): string {
     return `Hello ${this.first} ${this.second}`;
   }
 }
 
 export class Weather {
-  constructor(weather, city) {
-    this.weather = weather;
-    this.city = city;
-  }
+  constructor(private weather: string, private city: string) {}
 
-  get message() {
+  get message(): string {
     return `It is ${this.weather} in ${this.city}`;
   }
 }

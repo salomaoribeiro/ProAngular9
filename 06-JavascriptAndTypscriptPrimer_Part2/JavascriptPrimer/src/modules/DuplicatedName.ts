@@ -1,5 +1,5 @@
 export class Name {
-  get message() {
+  get message(): string {
     return "Other name.";
   }
 }
