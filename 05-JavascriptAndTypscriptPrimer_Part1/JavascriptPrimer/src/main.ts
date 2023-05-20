@@ -104,3 +104,9 @@ console.log("---");
 myArray2.forEach((value, index) =>
   console.log("Index: " + index + ": " + myArray2[index])
 );
+
+let myArray3 = [...myArray2, 200, "Bob", false];
+
+for (let index = 0; index < myArray3.length; index++) {
+  console.log(`Array item: ${index} : ${myArray3[index]}`);
+}
