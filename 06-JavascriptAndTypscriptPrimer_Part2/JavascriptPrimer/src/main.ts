@@ -10,3 +10,9 @@ let totalValues = products
   .reduce((prev, item) => prev + item.price * item.stock, 0);
 
 console.log("Total value: $" + totalValues.toFixed(2));
+
+let myData = new Object();
+myData.name = "Adam";
+myData.weather = "sunny";
+console.log("Hello " + myData.name + ".");
+console.log("Today is " + myData.weather + ".");
