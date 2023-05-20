@@ -20,7 +20,10 @@ console.log("Today is " + myData.weather + ".");
 let myObject = {
   name: "Adam",
   weather: "sunny",
+  printMessages: function () {
+    console.log("Hello " + myObject.name + ".");
+    console.log("Today is " + myObject.weather + ".");
+  },
 };
 
-console.log("Hello " + myObject.name + ".");
-console.log("Today is " + myObject.weather + ".");
+myObject.printMessages();
