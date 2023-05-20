@@ -27,3 +27,18 @@ let myObject = {
 };
 
 myObject.printMessages();
+
+class MyClass {
+  constructor(name, weather) {
+    this.name = name;
+    this.weather = weather;
+  }
+
+  printMessages() {
+    console.log("Hello " + this.name + ".");
+    console.log("Today is " + this.weather + ".");
+  }
+}
+
+let myClass = new MyClass("Jacqui", "raining");
+myClass.printMessages();
