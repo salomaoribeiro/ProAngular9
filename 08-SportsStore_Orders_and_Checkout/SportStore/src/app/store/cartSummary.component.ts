@@ -5,7 +5,7 @@ import { Cart } from "../model/cart.model";
   selector: "cart-summary",
   templateUrl: "cartSummary.component.html"
 })
-export class cartSummaryComponent {
+export class CartSummaryComponent {
   constructor(public cart: Cart) {
 
   }
