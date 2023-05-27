@@ -1,5 +1,3 @@
-import { Injectable } from "@angular/core";
-import { Product } from "./product.model";
 
 @Injectable()
 export class Cart {
@@ -20,6 +18,7 @@ export class Cart {
 
   updateQuantity(product: Product, quantity: number) {
     let line = this.lines.find(line => line.product.id == product.id);
+
     if(line != undefined)
       line.quantity = Number(quantity);
 
@@ -27,7 +26,7 @@ export class Cart {
   }
 
   removeLine(id: number) {
-    let index = this.lines.findIndex(line => line.product.id = id);
+    let index = this.lines.findIndex(line => line.product.id == id);
     this.lines.splice(index, 1);
 
     this.recalculate();
@@ -42,9 +41,10 @@ export class Cart {
   private recalculate() {
     this.itemCount = 0;
     this.cartPrice = 0;
-    this.lines.array.forEach(element => {
+
+    this.lines.forEach(element => {
       this.itemCount += element.quantity;
-      this.cartPrice += (element.price * element.quantity);
+      this.cartPrice += (element.product.price * element.quantity);
     });
   }
 }
